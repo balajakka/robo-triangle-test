@@ -25,6 +25,7 @@ public class TriangleAreaService {
       } else {
          double r = (base * height) / 2;
          DecimalFormat decimalFormat = new DecimalFormat(TWO_DECIMAL_PLACES);
+         System.out.println(decimalFormat.format(r));
          return decimalFormat.format(r);
       }
    }
