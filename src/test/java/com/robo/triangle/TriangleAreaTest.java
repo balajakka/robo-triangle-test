@@ -6,7 +6,7 @@ package com.robo.triangle;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TriangleArealTest {
+public class TriangleAreaTest {
 
    @Test
    public void areaCalculationForDouble() throws Exception {

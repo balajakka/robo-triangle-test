@@ -1,6 +1,6 @@
 package com.robo.triangle;
 
-public class TriangleAreRequest {
+public class TriangleAreaRequest {
 
    private double triangleHeight;
    private double triangleBase;
