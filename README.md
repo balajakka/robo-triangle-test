@@ -19,7 +19,7 @@ still working on it.)
 2. Right click on *TriangleAreaTest* and click *Run'TriangleAreaTest'* to run Junit tests.
 
 ####Things expected to be completed by COB today:
-1. Fix the controller test to verify service is working.
+1. Fix the controller test to verify service is working. //Bala: This is now working. (*Run TriangleAreaControllerTest.java* to test controller class)
 
 ####Things I could enhance:
 1. Write cucumber/Jbehave tests with BDD and glue code to make tests more readable.
