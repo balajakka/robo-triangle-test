@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -29,6 +30,7 @@ public class TriangleAreaControllerTest {
 
    @Test
    public void testGetTriangleArea() throws Exception {
-      this.mockMvc.perform(get("//triangle/area/12.0/11.0")).andExpect(content().string("66.00"));
+      Mockito.when(triangleAreaService.calcAreaOfRightTriangle(12.0, 11.0)).thenReturn("66.00");
+      this.mockMvc.perform(get("/triangle/area/12.0/11.0")).andExpect(content().string("66.00"));
    }
 }

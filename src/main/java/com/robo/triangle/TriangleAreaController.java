@@ -21,7 +21,7 @@ public class TriangleAreaController {
     */
    @RequestMapping(value = {"/triangle/area/{height}/{base}"}, method = {RequestMethod.GET})
    @ResponseBody
-   public String getTriangleArea(@PathVariable String height, @PathVariable String base) throws Exception {
+   public String getTriangleArea(@PathVariable("height") String height, @PathVariable("base") String base) throws Exception {
       return triangleAreaService.calcAreaOfRightTriangle(Double.valueOf(height), Double.valueOf(base));
 
    }
